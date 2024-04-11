@@ -1,20 +1,179 @@
+* {
+  font-family: Merriweather, serif;
+}
+
 /* ================================= 
   Base Styles
 ==================================== */
+
 body {
-    font: 300 62.5%/1.4 Merriweather, serif;
-    color: darkslategrey;
-    background-color: rgb(236, 236, 236);
-    min-height: 100vh;
-    margin: 0 auto;
-    text-align: center;
-    max-width: 1000px;
-    min-width: 320px;
-  }
+  font-weight: 200; 
+  font-size: 16px;
+  line-height: 1.2;
+  color: rgb(97, 113, 113);
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+header {
+  background-color: rgb(51, 67, 78);
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+footer, header {
+  text-align: center;
+}
+
+footer {
+  margin-bottom: 60%;
+}
+
+#logo-text {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  font-size: 1.2em;
+}
+
+h1, legend {
+  font-size: 1.2em;
+  color: rgb(24, 27, 41);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+legend {
+  margin-bottom: 20px;
+}
+
+#summary {
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: 300; 
+}
+
+main {
+  display: flex; 
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 10px;
+}
+
+#divider {
+  height: 4px;
+  border-top: 4px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 2em;
+}
+
+#line-break {
+  height: 4px;
+  border-bottom: 2px solid black;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+  /* ================================= 
+  Form Styles
+==================================== */
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.light-text {
+  font-weight: 300;
+  color: #7a7a7a;
+  font-size: .8em;
+  font-style: italic;
+  padding-right: 1em;
+}
+
+.news-checkbox-container label {
+  display: inline;
+  padding-left: 6px;
+}
 
 
+/* ================================= 
+  Form Input Styles
+==================================== */
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  margin: .8em 0;
+  min-height: 2.4em;
+  padding: 8px;
+  height: auto;
+  border: none;
+  border-radius: 4px;
+  color: darkslategrey;
+  background-color: rgb(239, 239, 239);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
 
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  margin-bottom: 20px;
+}
+
+input[id="zip"] {
+  width: 50%;
+}
+
+select {
+  cursor: pointer;
+  font-size: 1em;
+  padding: 14px;
+  color:rgb(113, 129, 129);
+}
+
+textarea {
+  height: 100px;
+}
+
+::placeholder {
+  font-weight: 300;
+  color: #7d7d7d;
+  font-size: .8em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 1em;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 3px solid #09f;
+}
+
+/* ================================= 
+  Button and Footer Styles
+==================================== */
+
+button {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  background: rgb(70, 174, 170);
+  color: white;
+}
 
   /* ================================= 
   Media Queries
@@ -22,9 +181,6 @@ body {
 
 /* ==== When the browser is at least 768px and above === */
 @media (min-width: 768px) { 
-
-
-
 
 
 }
