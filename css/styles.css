@@ -159,7 +159,6 @@ input[type="checkbox"] {
 
 
 textarea::placeholder {
-  font-style: none;
   text-align: left;
   font-size: 1em;
 }
@@ -211,7 +210,5 @@ h1 {
 input[id="zip"] {
   max-width: 30%;
 }
-
-
 
 }
